@@ -1,0 +1,8 @@
+TextContent = 
+{
+	ZilchScriptBuilder = 
+	{
+		string Name = "CommitTest",
+		uint64 ResourceId = 5a13c97654daf0f1,
+	},
+},
