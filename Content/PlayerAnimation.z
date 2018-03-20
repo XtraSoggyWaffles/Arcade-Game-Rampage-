@@ -1,0 +1,52 @@
+class PlayerAnimation : ZilchComponent
+{
+    //Standing Still
+    [Property]
+    var Class : SpriteSource = null;
+    //Moving Left
+    [Property]
+    var ClassLeftAnimation : SpriteSource = null;
+    //Moving right
+    [Property]
+    var ClassRightAnimation : SpriteSource = null;
+    //Moving Left and Down
+    
+    var Controller:Gamepad = null;
+
+    
+    function Initialize(init : CogInitializer)
+    {
+        this.Controller = Zero.Gamepads.GetGamePad(0);
+        Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+    }
+
+    function OnLogicUpdate(event : UpdateEvent)
+    {
+        Console.WriteLine(this.Controller.LeftStick);
+        //Walking Forward
+        //Standing Still
+        
+        if((Zero.Keyboard.KeyIsDown(Keys.A) || (this.Controller.LeftStick.X <= -1 && Math.Abs(this.Controller.LeftStick.Y) < 1)) && this.Owner.Sprite.SpriteSource != this.ClassLeftAnimation)
+        {
+            Console.WriteLine("left");
+            this.Owner.Sprite.SpriteSource = this.ClassLeftAnimation;
+        }
+         
+        else if((Zero.Keyboard.KeyIsDown(Keys.D) || (this.Controller.LeftStick.X >= 1 && Math.Abs(this.Controller.LeftStick.Y) < 1)) && this.Owner.Sprite.SpriteSource != this.ClassRightAnimation)
+        {
+            Console.WriteLine("right");
+            this.Owner.Sprite.SpriteSource = this.ClassRightAnimation;
+        }
+        else if(Zero.Keyboard.KeyIsUp(Keys.A) && Zero.Keyboard.KeyIsUp(Keys.D))
+        {
+            this.Owner.Sprite.SpriteSource = this.Class;
+        }
+        /*
+        else if((Zero.Keyboard.KeyIsDown(Keys.A) || this.Controller.LeftStick.X < -0.9) && Zero.Keyboard.KeyIsDown(Keys.S) && this.Owner.Sprite.SpriteSource != this.WizardClassForwardAnimation)
+        {
+            Console.WriteLine("left");
+            this.Owner.Sprite.SpriteSource = this.WizardClassForwardAnimation;
+        }
+        */
+    }
+}

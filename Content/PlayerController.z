@@ -10,12 +10,12 @@ class PlayerController : ZilchComponent
   var movement = Real3(0.0, 0.0, 0.0);
 
   // control left, right, and up
-  if(Zero.Keyboard.KeyIsDown(Keys.Left))
+  if(Zero.Keyboard.KeyIsDown(Keys.A))
   {
     movement.X -= 1.0;
   }
 
-  if(Zero.Keyboard.KeyIsDown(Keys.Right))
+  if(Zero.Keyboard.KeyIsDown(Keys.D))
   {
     movement.X += 1.0;
   }
