@@ -13,13 +13,11 @@ class PlayerController : ZilchComponent
   if(Zero.Keyboard.KeyIsDown(Keys.A))
   {
     movement.X -= 1.0;
-    this.Owner.Sprite.FlipX = true;
   }
 
   if(Zero.Keyboard.KeyIsDown(Keys.D))
   {
     movement.X += 1.0;
-    this.Owner.Sprite.FlipX = false;
   }
 
   if(Zero.Keyboard.KeyIsPressed(Keys.Space))
