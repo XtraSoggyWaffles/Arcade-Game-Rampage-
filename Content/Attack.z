@@ -1,0 +1,51 @@
+class Attack : ZilchComponent
+ {
+  function Initialize(init : CogInitializer)
+  {
+    Zero.Connect(Zero.Keyboard, Events.KeyDown, this.OnKeyDown);
+  }
+
+  function OnKeyDown(event : KeyboardEvent)
+ {
+  // When space key is pressed
+  if(event.Key == Keys. E && Zero.Keyboard.KeyIsDown(Keys.Left))
+  {
+    var spawnPosition = this.Owner.Transform.Translation;
+
+    // Find the Ball archetype:
+    var archetypeToSpawn = Archetype.Bite;
+
+    // Pass the archetype and position to the Space to make our object
+    var createdNinjaStar = this.Space.CreateAtPosition(archetypeToSpawn, spawnPosition);
+
+    createdNinjaStar.RigidBody.Velocity = Real3(-20,0,0);
+ 
+  }
+  else if(event.Key == Keys. E && Zero.Keyboard.KeyIsDown(Keys.Right))
+  {
+    var spawnPosition = this.Owner.Transform.Translation;
+
+    // Find the Ball archetype:
+    var archetypeToSpawn = Archetype.Bite;
+
+    // Pass the archetype and position to the Space to make our object
+    var createdNinjaStar = this.Space.CreateAtPosition(archetypeToSpawn, spawnPosition);
+
+    createdNinjaStar.RigidBody.Velocity = Real3(20,0,0);
+ 
+  }
+  else if(event.Key == Keys.E && Zero.Keyboard.KeyIsUp(Keys.Left) && Zero.Keyboard.KeyIsUp(Keys.Right))
+  {
+        var spawnPosition = this.Owner.Transform.Translation;
+
+    // Find the Ball archetype:
+    var archetypeToSpawn = Archetype.Bite;
+
+    // Pass the archetype and position to the Space to make our object
+    var createdNinjaStar = this.Space.CreateAtPosition(archetypeToSpawn, spawnPosition);
+
+    createdNinjaStar.RigidBody.Velocity = Real3(20,0,0);
+  }
+  
+ }
+}
