@@ -2,7 +2,7 @@ ImageContent =
 {
 	SpriteSourceBuilder = 
 	{
-		string Name = "Rexxar move1",
+		string Name = "DinoMoveRight",
 		uint64 ResourceId = 5a0e93ae4310c670,
 		uint64 AtlasId = 5274cf95e4a661fd,
 		uint FrameSizeX = 100,

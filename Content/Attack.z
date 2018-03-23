@@ -8,33 +8,33 @@ class Attack : ZilchComponent
   function OnKeyDown(event : KeyboardEvent)
  {
   // When space key is pressed
-  if(event.Key == Keys. E && Zero.Keyboard.KeyIsDown(Keys.Left))
+  if(event.Key == Keys. E && Zero.Keyboard.KeyIsDown(Keys.A))
   {
     var spawnPosition = this.Owner.Transform.Translation;
 
-    // Find the Ball archetype:
+    // Find the attack archetype:
     var archetypeToSpawn = Archetype.Bite;
 
     // Pass the archetype and position to the Space to make our object
-    var createdNinjaStar = this.Space.CreateAtPosition(archetypeToSpawn, spawnPosition);
+    var classAttack = this.Space.CreateAtPosition(archetypeToSpawn, spawnPosition);
 
-    createdNinjaStar.RigidBody.Velocity = Real3(-20,0,0);
+    classAttack.RigidBody.Velocity = Real3(-20,0,0);
  
   }
-  else if(event.Key == Keys. E && Zero.Keyboard.KeyIsDown(Keys.Right))
+  else if(event.Key == Keys. E && Zero.Keyboard.KeyIsDown(Keys.D))
   {
     var spawnPosition = this.Owner.Transform.Translation;
 
-    // Find the Ball archetype:
+    //Find the bite archetype:
     var archetypeToSpawn = Archetype.Bite;
 
-    // Pass the archetype and position to the Space to make our object
-    var createdNinjaStar = this.Space.CreateAtPosition(archetypeToSpawn, spawnPosition);
+    //Pass the archetype and position to the Space to make our object
+    var classAttack = this.Space.CreateAtPosition(archetypeToSpawn, spawnPosition);
 
-    createdNinjaStar.RigidBody.Velocity = Real3(20,0,0);
+    classAttack.RigidBody.Velocity = Real3(20,0,0);
  
   }
-  else if(event.Key == Keys.E && Zero.Keyboard.KeyIsUp(Keys.Left) && Zero.Keyboard.KeyIsUp(Keys.Right))
+  else if(event.Key == Keys.E && Zero.Keyboard.KeyIsUp(Keys.A) && Zero.Keyboard.KeyIsUp(Keys.D))
   {
         var spawnPosition = this.Owner.Transform.Translation;
 
@@ -42,9 +42,9 @@ class Attack : ZilchComponent
     var archetypeToSpawn = Archetype.Bite;
 
     // Pass the archetype and position to the Space to make our object
-    var createdNinjaStar = this.Space.CreateAtPosition(archetypeToSpawn, spawnPosition);
+    var classAttack = this.Space.CreateAtPosition(archetypeToSpawn, spawnPosition);
 
-    createdNinjaStar.RigidBody.Velocity = Real3(20,0,0);
+    classAttack.RigidBody.Velocity = Real3(20,0,0);
   }
   
  }

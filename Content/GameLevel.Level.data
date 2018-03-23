@@ -104,7 +104,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [1.05355263, 12.2986965, 50],
+			Vec3 Translation = [2.38733506, -1.03543735, 50],
 			Vec3 Scale = [1, 1, 1],
 			Quat Rotation = [-0, -1.09278471e-08, 0, 1],
 		},
@@ -124,7 +124,7 @@ Level =
 			float LookDistance = 50,
 			float VerticalAngle = 0,
 			float HorizontalAngle = 0,
-			Vec3 LookTarget = [1.05355263, 12.2986965, 5.252611e-07],
+			Vec3 LookTarget = [2.38733506, -1.03543735, 5.252611e-07],
 			float MoveSensitivity = 1,
 		},
 		EditorRenderer = 
@@ -148,7 +148,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [0.287554324, -5.98924351, 0],
+			Vec3 Translation = [-8.42975998, -5.1554141, 0],
 			Vec3 Scale = [5, 5, 1],
 			Quat Rotation = [0, 0, 0, 1],
 		},
@@ -162,7 +162,7 @@ Level =
 			BlendMode BlendMode = Alpha,
 			SpriteGeometryMode GeometryMode = ZPlane,
 			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
-			string SpriteSource = "5a0d28b203e31f53:Rexxar (1)",
+			string SpriteSource = "5a0d28b203e31f53:Dino",
 			bool RenderMask = false,
 			bool FlipX = false,
 			bool FlipY = false,
@@ -223,19 +223,16 @@ Level =
 			float GroundTraction = 1,
 			float AirTraction = 1,
 		},
-		PlayerAnimation = 
-		{
-			string Ninja = "5a0d28b203e31f53:Rexxar (1)",
-			string NinjaForwardAnimation = "5a0e93ae4310c670:Rexxar move1",
-			string NinjaBackUp = "5a0e96dffeee1ddd:Rexxar move left",
-			string NinjaLeftAnimation = "5a0e96dffeee1ddd:Rexxar move left",
-			string NinjaRightAnimation = "5a0e93ae4310c670:Rexxar move1",
-			string WizardClassLeftDown = "",
-			string NinjaJump = "5a0e97a700faf575:Rexxar jump (1)",
-			string NinjaAttack = "5a0d28b203e31f53:Rexxar (1)",
-		},
 		Attack = 
 		{
+		},
+		PlayerAnimation = 
+		{
+			string Class = "5a0d28b203e31f53:Dino",
+			string ClassLeftAnimation = "5a0e96dffeee1ddd:DinoMoveLeft",
+			string ClassRightAnimation = "5a0e93ae4310c670:DinoMoveRight",
+			string ClassJump = "5a0e97a700faf575:DinoJump",
+			string ClassAttack = "",
 		},
 	},
 	Cog = 
@@ -1605,6 +1602,46 @@ Level =
 					},
 				},
 			},
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 24,
+		},
+		Named = 
+		{
+			string Name = "Background",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0, 0, -1],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [0, 0, 0, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5275aa4d802dd6dc:Square",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+		Area = 
+		{
+			Vec2 Size = [100, 100],
+			Location Origin = Center,
 		},
 	},
 },
