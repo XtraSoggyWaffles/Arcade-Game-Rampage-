@@ -466,11 +466,11 @@ Level =
 					bool VisibilityCulling = true,
 					bool VisibilityEvents = true,
 					bool CastShadows = false,
-					Vec4 Color = [0, 0, 0, 1],
+					Vec4 Color = [1, 1, 1, 1],
 					BlendMode BlendMode = Alpha,
 					SpriteGeometryMode GeometryMode = ZPlane,
 					string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
-					string SpriteSource = "5275aa4d802dd6dc:Square",
+					string SpriteSource = "5a5ff05a00d15254:QuitButton",
 					bool RenderMask = false,
 					bool FlipX = false,
 					bool FlipY = false,
@@ -480,7 +480,7 @@ Level =
 				},
 				Area = 
 				{
-					Vec2 Size = [4, 2],
+					Vec2 Size = [6, 6],
 					Location Origin = Center,
 				},
 				Reactive = 
@@ -491,8 +491,8 @@ Level =
 				UIButton = 
 				{
 					bool Active = true,
-					string DefaultSprite = "",
-					string HoveredSprite = "",
+					string DefaultSprite = "5a5ff05a00d15254:QuitButton",
+					string HoveredSprite = "5a5ff02e1f0d23c6:QuitButtonAnimation",
 					string ClickedSprite = "",
 					string LevelToLoad = "",
 				},
