@@ -370,7 +370,7 @@ Level =
 		},
 		RigidBody = 
 		{
-			bool Static = false,
+			bool Static = true,
 			bool Asleep = false,
 			bool Kinematic = false,
 			bool RotationLocked = false,
@@ -439,7 +439,7 @@ Level =
 				},
 				RigidBody = 
 				{
-					bool Static = false,
+					bool Static = true,
 					bool Asleep = false,
 					bool Kinematic = false,
 					bool RotationLocked = false,
@@ -508,7 +508,7 @@ Level =
 						},
 						RigidBody = 
 						{
-							bool Static = false,
+							bool Static = true,
 							bool Asleep = false,
 							bool Kinematic = false,
 							bool RotationLocked = false,
@@ -577,7 +577,7 @@ Level =
 								},
 								RigidBody = 
 								{
-									bool Static = false,
+									bool Static = true,
 									bool Asleep = false,
 									bool Kinematic = false,
 									bool RotationLocked = false,
@@ -646,7 +646,7 @@ Level =
 										},
 										RigidBody = 
 										{
-											bool Static = false,
+											bool Static = true,
 											bool Asleep = false,
 											bool Kinematic = false,
 											bool RotationLocked = false,
@@ -715,7 +715,7 @@ Level =
 												},
 												RigidBody = 
 												{
-													bool Static = false,
+													bool Static = true,
 													bool Asleep = false,
 													bool Kinematic = false,
 													bool RotationLocked = false,
@@ -784,7 +784,7 @@ Level =
 														},
 														RigidBody = 
 														{
-															bool Static = false,
+															bool Static = true,
 															bool Asleep = false,
 															bool Kinematic = false,
 															bool RotationLocked = false,
@@ -853,7 +853,7 @@ Level =
 																},
 																RigidBody = 
 																{
-																	bool Static = false,
+																	bool Static = true,
 																	bool Asleep = false,
 																	bool Kinematic = false,
 																	bool RotationLocked = false,
@@ -922,7 +922,7 @@ Level =
 																		},
 																		RigidBody = 
 																		{
-																			bool Static = false,
+																			bool Static = true,
 																			bool Asleep = false,
 																			bool Kinematic = false,
 																			bool RotationLocked = false,
@@ -991,7 +991,7 @@ Level =
 																				},
 																				RigidBody = 
 																				{
-																					bool Static = false,
+																					bool Static = true,
 																					bool Asleep = false,
 																					bool Kinematic = false,
 																					bool RotationLocked = false,
@@ -1060,7 +1060,7 @@ Level =
 																						},
 																						RigidBody = 
 																						{
-																							bool Static = false,
+																							bool Static = true,
 																							bool Asleep = false,
 																							bool Kinematic = false,
 																							bool RotationLocked = false,
@@ -1129,7 +1129,7 @@ Level =
 																								},
 																								RigidBody = 
 																								{
-																									bool Static = false,
+																									bool Static = true,
 																									bool Asleep = false,
 																									bool Kinematic = false,
 																									bool RotationLocked = false,
@@ -1198,7 +1198,7 @@ Level =
 																										},
 																										RigidBody = 
 																										{
-																											bool Static = false,
+																											bool Static = true,
 																											bool Asleep = false,
 																											bool Kinematic = false,
 																											bool RotationLocked = false,
@@ -1267,7 +1267,7 @@ Level =
 																												},
 																												RigidBody = 
 																												{
-																													bool Static = false,
+																													bool Static = true,
 																													bool Asleep = false,
 																													bool Kinematic = false,
 																													bool RotationLocked = false,
@@ -1336,7 +1336,7 @@ Level =
 																														},
 																														RigidBody = 
 																														{
-																															bool Static = false,
+																															bool Static = true,
 																															bool Asleep = false,
 																															bool Kinematic = false,
 																															bool RotationLocked = false,
@@ -1405,7 +1405,7 @@ Level =
 																																},
 																																RigidBody = 
 																																{
-																																	bool Static = false,
+																																	bool Static = true,
 																																	bool Asleep = false,
 																																	bool Kinematic = false,
 																																	bool RotationLocked = false,
@@ -1474,7 +1474,7 @@ Level =
 																																		},
 																																		RigidBody = 
 																																		{
-																																			bool Static = false,
+																																			bool Static = true,
 																																			bool Asleep = false,
 																																			bool Kinematic = false,
 																																			bool RotationLocked = false,
@@ -1543,7 +1543,7 @@ Level =
 																																				},
 																																				RigidBody = 
 																																				{
-																																					bool Static = false,
+																																					bool Static = true,
 																																					bool Asleep = false,
 																																					bool Kinematic = false,
 																																					bool RotationLocked = false,

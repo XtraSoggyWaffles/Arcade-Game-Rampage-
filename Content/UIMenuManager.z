@@ -111,7 +111,7 @@ class UIMenuManager : ZilchComponent
         
         // Check to see if the button is one that loads a level; if it is, load the level.
         if(button.Name == "StartButton" ||
-           button.Name == "HowToPlayButton" ||
+           button.Name == "ControlsButton" ||
            button.Name == "CreditsButton" ||
            button.Name == "BackButton" )
         {
