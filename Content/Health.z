@@ -45,6 +45,7 @@ class Health : ZilchComponent
     function ApplyDamage(damage : Real)
     {
         // Compute the total damage based upon our damage scalar.
+        Console.WriteLine("Health: `this.CurrentHealth`");
         damage = damage * this.DamageScalar;
         
         this.CurrentHealth -= damage;
