@@ -104,7 +104,11 @@ Level =
 		},
 		Transform = 
 		{
+<<<<<<< HEAD
 			Vec3 Translation = [18.2184391, -10.2023973, 50],
+=======
+			Vec3 Translation = [7.68125963, -7.01988983, 50],
+>>>>>>> 06bfe1916d45e6197477a6a9a9aa59c361eae905
 			Vec3 Scale = [1, 1, 1],
 			Quat Rotation = [-0, -1.09278471e-08, 0, 1],
 		},
@@ -116,7 +120,15 @@ Level =
 			float FieldOfView = 45,
 			float NearPlane = 0.5,
 			float FarPlane = 500,
+<<<<<<< HEAD
 			float Size = 100,
+=======
+<<<<<<< HEAD
+			float Size = 22.313055,
+=======
+			float Size = 74.0820923,
+>>>>>>> 6b3e03a7d699bd65a2e6698b8d927e44450a23b3
+>>>>>>> 06bfe1916d45e6197477a6a9a9aa59c361eae905
 		},
 		EditorCameraController = 
 		{
@@ -124,7 +136,11 @@ Level =
 			float LookDistance = 50,
 			float VerticalAngle = 0,
 			float HorizontalAngle = 0,
+<<<<<<< HEAD
 			Vec3 LookTarget = [18.2184391, -10.2023973, 5.252611e-07],
+=======
+			Vec3 LookTarget = [7.68125963, -7.01988983, 0],
+>>>>>>> 06bfe1916d45e6197477a6a9a9aa59c361eae905
 			float MoveSensitivity = 1,
 		},
 		EditorRenderer = 
@@ -148,7 +164,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [-8.84863091, -16.1147976, 0],
+			Vec3 Translation = [-2.65161133, -14.5197754, 0],
 			Vec3 Scale = [5, 5, 1],
 			Quat Rotation = [0, 0, 0, 1],
 		},
@@ -232,6 +248,9 @@ Level =
 			string ClassAttack = "",
 		},
 		DinoAttack = 
+		{
+		},
+		Climbing = 
 		{
 		},
 	},
