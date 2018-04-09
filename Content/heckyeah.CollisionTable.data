@@ -1,0 +1,63 @@
+CollisionTable = 
+{
+	Array RegisteredGroups = 
+	[
+		"4e740859314e5515:DefaultGroup",
+		"5a0249722c4bb335:Bite",
+		"5a02488c30537bbf:Player",
+	],
+	Array CollisionFilters = 
+	[
+		{
+			string TypeA = "5a0249722c4bb335:Bite",
+			string TypeB = "5a02488c30537bbf:Player",
+			bool SkipResolution = false,
+			bool SkipDetectingCollision = true,
+			bool StartEvent = false,
+			bool EndEvent = false,
+			bool PersistedEvent = false,
+			bool PreSolveEvent = false,
+		},
+		{
+			string TypeA = "5a0249722c4bb335:Bite",
+			string TypeB = "5a0249722c4bb335:Bite",
+			bool SkipResolution = false,
+			bool SkipDetectingCollision = true,
+			bool StartEvent = false,
+			bool EndEvent = false,
+			bool PersistedEvent = false,
+			bool PreSolveEvent = false,
+		},
+		{
+			string TypeA = "5a02488c30537bbf:Player",
+			string TypeB = "5a02488c30537bbf:Player",
+			bool SkipResolution = false,
+			bool SkipDetectingCollision = true,
+			bool StartEvent = false,
+			bool EndEvent = false,
+			bool PersistedEvent = false,
+			bool PreSolveEvent = false,
+		},
+		{
+			string TypeA = "4e740859314e5515:DefaultGroup",
+			string TypeB = "5a02488c30537bbf:Player",
+			bool SkipResolution = false,
+			bool SkipDetectingCollision = false,
+			bool StartEvent = false,
+			bool EndEvent = false,
+			bool PersistedEvent = false,
+			bool PreSolveEvent = false,
+		},
+		{
+			string TypeA = "5a0249722c4bb335:Bite",
+			string TypeB = "4e740859314e5515:DefaultGroup",
+			bool SkipResolution = false,
+			bool SkipDetectingCollision = false,
+			bool StartEvent = false,
+			bool EndEvent = false,
+			bool PersistedEvent = false,
+			bool PreSolveEvent = false,
+		},
+	],
+	bool AutoRegister = true,
+},

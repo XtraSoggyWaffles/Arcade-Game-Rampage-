@@ -25,6 +25,15 @@ Level =
 			float Drag = 0.699999988,
 			float AngularDrag = 0.100000001,
 		},
+		ForwardRenderer = 
+		{
+			Vec4 ClearColor = [0.155000001, 0.155000001, 0.155000001, 1],
+			bool DrawNonVisible = false,
+			bool DrawDebugObjects = true,
+			bool DrawEditorIcons = true,
+			bool EditorIconDepth = true,
+			bool Wireframe = false,
+		},
 		CameraViewport = 
 		{
 			bool Background = true,
@@ -67,15 +76,6 @@ Level =
 			Vec2 Resolution = [1280, 720],
 			Vec4 MarginColor = [0, 0, 0, 1],
 		},
-		ForwardRenderer = 
-		{
-			Vec4 ClearColor = [0.155000001, 0.155000001, 0.155000001, 1],
-			bool DrawNonVisible = false,
-			bool DrawDebugObjects = true,
-			bool DrawEditorIcons = true,
-			bool EditorIconDepth = true,
-			bool Wireframe = false,
-		},
 		GridDraw = 
 		{
 			bool Active = true,
@@ -104,7 +104,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [14.0543251, -10.2023973, 50],
+			Vec3 Translation = [18.2184391, -10.2023973, 50],
 			Vec3 Scale = [1, 1, 1],
 			Quat Rotation = [-0, -1.09278471e-08, 0, 1],
 		},
@@ -116,7 +116,7 @@ Level =
 			float FieldOfView = 45,
 			float NearPlane = 0.5,
 			float FarPlane = 500,
-			float Size = 74.0820923,
+			float Size = 100,
 		},
 		EditorCameraController = 
 		{
@@ -124,7 +124,7 @@ Level =
 			float LookDistance = 50,
 			float VerticalAngle = 0,
 			float HorizontalAngle = 0,
-			Vec3 LookTarget = [14.0543251, -10.2023973, 5.252611e-07],
+			Vec3 LookTarget = [18.2184391, -10.2023973, 5.252611e-07],
 			float MoveSensitivity = 1,
 		},
 		EditorRenderer = 
@@ -176,7 +176,7 @@ Level =
 			bool SendsMessages = true,
 			bool Seamless = true,
 			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
-			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			string SerializedGroupName = "5a02488c30537bbf:Player",
 			Vec3 Offset = [0, 0, 0],
 			Vec3 Size = [0.75, 0.75, 0.5],
 		},
@@ -432,7 +432,7 @@ Level =
 		},
 		Health = 
 		{
-			float MaxHealth = 10,
+			float MaxHealth = 5,
 			bool DestroyAtZeroHealth = true,
 			float DamageScalar = 1,
 		},
@@ -440,7 +440,7 @@ Level =
 		{
 			float Damage = 10,
 			bool SendsDeathEvent = true,
-			bool DieOnCollide = true,
+			bool DieOnCollide = false,
 		},
 		Hierarchy = 
 		{
@@ -507,7 +507,7 @@ Level =
 				},
 				Health = 
 				{
-					float MaxHealth = 10,
+					float MaxHealth = 5,
 					bool DestroyAtZeroHealth = true,
 					float DamageScalar = 1,
 				},
@@ -515,7 +515,7 @@ Level =
 				{
 					float Damage = 10,
 					bool SendsDeathEvent = true,
-					bool DieOnCollide = true,
+					bool DieOnCollide = false,
 				},
 				Hierarchy = 
 				{
@@ -584,7 +584,7 @@ Level =
 				},
 				Health = 
 				{
-					float MaxHealth = 10,
+					float MaxHealth = 5,
 					bool DestroyAtZeroHealth = true,
 					float DamageScalar = 1,
 				},
@@ -592,7 +592,7 @@ Level =
 				{
 					float Damage = 10,
 					bool SendsDeathEvent = true,
-					bool DieOnCollide = true,
+					bool DieOnCollide = false,
 				},
 				Hierarchy = 
 				{
@@ -661,7 +661,7 @@ Level =
 				},
 				Health = 
 				{
-					float MaxHealth = 10,
+					float MaxHealth = 5,
 					bool DestroyAtZeroHealth = true,
 					float DamageScalar = 1,
 				},
@@ -669,7 +669,7 @@ Level =
 				{
 					float Damage = 10,
 					bool SendsDeathEvent = true,
-					bool DieOnCollide = true,
+					bool DieOnCollide = false,
 				},
 				Hierarchy = 
 				{
@@ -738,7 +738,7 @@ Level =
 				},
 				Health = 
 				{
-					float MaxHealth = 10,
+					float MaxHealth = 5,
 					bool DestroyAtZeroHealth = true,
 					float DamageScalar = 1,
 				},
@@ -746,7 +746,7 @@ Level =
 				{
 					float Damage = 10,
 					bool SendsDeathEvent = true,
-					bool DieOnCollide = true,
+					bool DieOnCollide = false,
 				},
 				Hierarchy = 
 				{
@@ -815,7 +815,7 @@ Level =
 				},
 				Health = 
 				{
-					float MaxHealth = 10,
+					float MaxHealth = 5,
 					bool DestroyAtZeroHealth = true,
 					float DamageScalar = 1,
 				},
@@ -823,7 +823,7 @@ Level =
 				{
 					float Damage = 10,
 					bool SendsDeathEvent = true,
-					bool DieOnCollide = true,
+					bool DieOnCollide = false,
 				},
 				Hierarchy = 
 				{
@@ -892,7 +892,7 @@ Level =
 				},
 				Health = 
 				{
-					float MaxHealth = 10,
+					float MaxHealth = 5,
 					bool DestroyAtZeroHealth = true,
 					float DamageScalar = 1,
 				},
@@ -900,7 +900,7 @@ Level =
 				{
 					float Damage = 10,
 					bool SendsDeathEvent = true,
-					bool DieOnCollide = true,
+					bool DieOnCollide = false,
 				},
 				Hierarchy = 
 				{
@@ -969,7 +969,7 @@ Level =
 				},
 				Health = 
 				{
-					float MaxHealth = 10,
+					float MaxHealth = 5,
 					bool DestroyAtZeroHealth = true,
 					float DamageScalar = 1,
 				},
@@ -977,7 +977,7 @@ Level =
 				{
 					float Damage = 10,
 					bool SendsDeathEvent = true,
-					bool DieOnCollide = true,
+					bool DieOnCollide = false,
 				},
 				Hierarchy = 
 				{
@@ -1046,7 +1046,7 @@ Level =
 				},
 				Health = 
 				{
-					float MaxHealth = 10,
+					float MaxHealth = 5,
 					bool DestroyAtZeroHealth = true,
 					float DamageScalar = 1,
 				},
@@ -1054,7 +1054,7 @@ Level =
 				{
 					float Damage = 10,
 					bool SendsDeathEvent = true,
-					bool DieOnCollide = true,
+					bool DieOnCollide = false,
 				},
 				Hierarchy = 
 				{
@@ -1123,7 +1123,7 @@ Level =
 				},
 				Health = 
 				{
-					float MaxHealth = 10,
+					float MaxHealth = 5,
 					bool DestroyAtZeroHealth = true,
 					float DamageScalar = 1,
 				},
@@ -1131,7 +1131,7 @@ Level =
 				{
 					float Damage = 10,
 					bool SendsDeathEvent = true,
-					bool DieOnCollide = true,
+					bool DieOnCollide = false,
 				},
 				Hierarchy = 
 				{
@@ -1200,7 +1200,7 @@ Level =
 				},
 				Health = 
 				{
-					float MaxHealth = 10,
+					float MaxHealth = 5,
 					bool DestroyAtZeroHealth = true,
 					float DamageScalar = 1,
 				},
@@ -1208,7 +1208,7 @@ Level =
 				{
 					float Damage = 10,
 					bool SendsDeathEvent = true,
-					bool DieOnCollide = true,
+					bool DieOnCollide = false,
 				},
 				Hierarchy = 
 				{
@@ -1277,7 +1277,7 @@ Level =
 				},
 				Health = 
 				{
-					float MaxHealth = 10,
+					float MaxHealth = 5,
 					bool DestroyAtZeroHealth = true,
 					float DamageScalar = 1,
 				},
@@ -1285,7 +1285,7 @@ Level =
 				{
 					float Damage = 10,
 					bool SendsDeathEvent = true,
-					bool DieOnCollide = true,
+					bool DieOnCollide = false,
 				},
 				Hierarchy = 
 				{
@@ -1354,7 +1354,7 @@ Level =
 				},
 				Health = 
 				{
-					float MaxHealth = 10,
+					float MaxHealth = 5,
 					bool DestroyAtZeroHealth = true,
 					float DamageScalar = 1,
 				},
@@ -1362,7 +1362,7 @@ Level =
 				{
 					float Damage = 10,
 					bool SendsDeathEvent = true,
-					bool DieOnCollide = true,
+					bool DieOnCollide = false,
 				},
 				Hierarchy = 
 				{
@@ -1431,7 +1431,7 @@ Level =
 				},
 				Health = 
 				{
-					float MaxHealth = 10,
+					float MaxHealth = 5,
 					bool DestroyAtZeroHealth = true,
 					float DamageScalar = 1,
 				},
@@ -1439,7 +1439,7 @@ Level =
 				{
 					float Damage = 10,
 					bool SendsDeathEvent = true,
-					bool DieOnCollide = true,
+					bool DieOnCollide = false,
 				},
 				Hierarchy = 
 				{
@@ -1508,7 +1508,7 @@ Level =
 				},
 				Health = 
 				{
-					float MaxHealth = 10,
+					float MaxHealth = 5,
 					bool DestroyAtZeroHealth = true,
 					float DamageScalar = 1,
 				},
@@ -1516,7 +1516,7 @@ Level =
 				{
 					float Damage = 10,
 					bool SendsDeathEvent = true,
-					bool DieOnCollide = true,
+					bool DieOnCollide = false,
 				},
 				Hierarchy = 
 				{
@@ -1585,7 +1585,7 @@ Level =
 				},
 				Health = 
 				{
-					float MaxHealth = 10,
+					float MaxHealth = 5,
 					bool DestroyAtZeroHealth = true,
 					float DamageScalar = 1,
 				},
@@ -1593,7 +1593,7 @@ Level =
 				{
 					float Damage = 10,
 					bool SendsDeathEvent = true,
-					bool DieOnCollide = true,
+					bool DieOnCollide = false,
 				},
 				Hierarchy = 
 				{
@@ -1662,7 +1662,7 @@ Level =
 				},
 				Health = 
 				{
-					float MaxHealth = 10,
+					float MaxHealth = 5,
 					bool DestroyAtZeroHealth = true,
 					float DamageScalar = 1,
 				},
@@ -1670,7 +1670,7 @@ Level =
 				{
 					float Damage = 10,
 					bool SendsDeathEvent = true,
-					bool DieOnCollide = true,
+					bool DieOnCollide = false,
 				},
 				Hierarchy = 
 				{
@@ -1739,7 +1739,7 @@ Level =
 				},
 				Health = 
 				{
-					float MaxHealth = 10,
+					float MaxHealth = 5,
 					bool DestroyAtZeroHealth = true,
 					float DamageScalar = 1,
 				},
@@ -1747,7 +1747,7 @@ Level =
 				{
 					float Damage = 10,
 					bool SendsDeathEvent = true,
-					bool DieOnCollide = true,
+					bool DieOnCollide = false,
 				},
 				Hierarchy = 
 				{
@@ -1816,7 +1816,7 @@ Level =
 				},
 				Health = 
 				{
-					float MaxHealth = 10,
+					float MaxHealth = 5,
 					bool DestroyAtZeroHealth = true,
 					float DamageScalar = 1,
 				},
@@ -1824,7 +1824,7 @@ Level =
 				{
 					float Damage = 10,
 					bool SendsDeathEvent = true,
-					bool DieOnCollide = true,
+					bool DieOnCollide = false,
 				},
 				Hierarchy = 
 				{
@@ -1893,7 +1893,7 @@ Level =
 				},
 				Health = 
 				{
-					float MaxHealth = 10,
+					float MaxHealth = 5,
 					bool DestroyAtZeroHealth = true,
 					float DamageScalar = 1,
 				},
@@ -1901,7 +1901,7 @@ Level =
 				{
 					float Damage = 10,
 					bool SendsDeathEvent = true,
-					bool DieOnCollide = true,
+					bool DieOnCollide = false,
 				},
 				Hierarchy = 
 				{
@@ -1970,7 +1970,7 @@ Level =
 				},
 				Health = 
 				{
-					float MaxHealth = 10,
+					float MaxHealth = 5,
 					bool DestroyAtZeroHealth = true,
 					float DamageScalar = 1,
 				},
@@ -1978,7 +1978,7 @@ Level =
 				{
 					float Damage = 10,
 					bool SendsDeathEvent = true,
-					bool DieOnCollide = true,
+					bool DieOnCollide = false,
 				},
 				Hierarchy = 
 				{
@@ -2047,7 +2047,7 @@ Level =
 				},
 				Health = 
 				{
-					float MaxHealth = 10,
+					float MaxHealth = 5,
 					bool DestroyAtZeroHealth = true,
 					float DamageScalar = 1,
 				},
@@ -2055,7 +2055,7 @@ Level =
 				{
 					float Damage = 10,
 					bool SendsDeathEvent = true,
-					bool DieOnCollide = true,
+					bool DieOnCollide = false,
 				},
 				Hierarchy = 
 				{
@@ -2124,7 +2124,7 @@ Level =
 				},
 				Health = 
 				{
-					float MaxHealth = 10,
+					float MaxHealth = 5,
 					bool DestroyAtZeroHealth = true,
 					float DamageScalar = 1,
 				},
@@ -2132,7 +2132,7 @@ Level =
 				{
 					float Damage = 10,
 					bool SendsDeathEvent = true,
-					bool DieOnCollide = true,
+					bool DieOnCollide = false,
 				},
 				Hierarchy = 
 				{
@@ -2201,7 +2201,7 @@ Level =
 				},
 				Health = 
 				{
-					float MaxHealth = 10,
+					float MaxHealth = 5,
 					bool DestroyAtZeroHealth = true,
 					float DamageScalar = 1,
 				},
@@ -2209,7 +2209,7 @@ Level =
 				{
 					float Damage = 10,
 					bool SendsDeathEvent = true,
-					bool DieOnCollide = true,
+					bool DieOnCollide = false,
 				},
 				Hierarchy = 
 				{
@@ -2278,7 +2278,7 @@ Level =
 				},
 				Health = 
 				{
-					float MaxHealth = 10,
+					float MaxHealth = 5,
 					bool DestroyAtZeroHealth = true,
 					float DamageScalar = 1,
 				},
@@ -2286,7 +2286,7 @@ Level =
 				{
 					float Damage = 10,
 					bool SendsDeathEvent = true,
-					bool DieOnCollide = true,
+					bool DieOnCollide = false,
 				},
 				Hierarchy = 
 				{
@@ -2355,7 +2355,7 @@ Level =
 				},
 				Health = 
 				{
-					float MaxHealth = 10,
+					float MaxHealth = 5,
 					bool DestroyAtZeroHealth = true,
 					float DamageScalar = 1,
 				},
@@ -2363,7 +2363,7 @@ Level =
 				{
 					float Damage = 10,
 					bool SendsDeathEvent = true,
-					bool DieOnCollide = true,
+					bool DieOnCollide = false,
 				},
 				Hierarchy = 
 				{
@@ -2432,7 +2432,7 @@ Level =
 				},
 				Health = 
 				{
-					float MaxHealth = 10,
+					float MaxHealth = 5,
 					bool DestroyAtZeroHealth = true,
 					float DamageScalar = 1,
 				},
@@ -2440,7 +2440,7 @@ Level =
 				{
 					float Damage = 10,
 					bool SendsDeathEvent = true,
-					bool DieOnCollide = true,
+					bool DieOnCollide = false,
 				},
 				Hierarchy = 
 				{
@@ -2509,7 +2509,7 @@ Level =
 				},
 				Health = 
 				{
-					float MaxHealth = 10,
+					float MaxHealth = 5,
 					bool DestroyAtZeroHealth = true,
 					float DamageScalar = 1,
 				},
@@ -2517,7 +2517,7 @@ Level =
 				{
 					float Damage = 10,
 					bool SendsDeathEvent = true,
-					bool DieOnCollide = true,
+					bool DieOnCollide = false,
 				},
 				Hierarchy = 
 				{
@@ -2586,7 +2586,7 @@ Level =
 				},
 				Health = 
 				{
-					float MaxHealth = 10,
+					float MaxHealth = 5,
 					bool DestroyAtZeroHealth = true,
 					float DamageScalar = 1,
 				},
@@ -2594,7 +2594,7 @@ Level =
 				{
 					float Damage = 10,
 					bool SendsDeathEvent = true,
-					bool DieOnCollide = true,
+					bool DieOnCollide = false,
 				},
 				Hierarchy = 
 				{
@@ -2663,7 +2663,7 @@ Level =
 				},
 				Health = 
 				{
-					float MaxHealth = 10,
+					float MaxHealth = 5,
 					bool DestroyAtZeroHealth = true,
 					float DamageScalar = 1,
 				},
@@ -2671,7 +2671,7 @@ Level =
 				{
 					float Damage = 10,
 					bool SendsDeathEvent = true,
-					bool DieOnCollide = true,
+					bool DieOnCollide = false,
 				},
 				Hierarchy = 
 				{
@@ -2740,7 +2740,7 @@ Level =
 				},
 				Health = 
 				{
-					float MaxHealth = 10,
+					float MaxHealth = 5,
 					bool DestroyAtZeroHealth = true,
 					float DamageScalar = 1,
 				},
@@ -2748,7 +2748,7 @@ Level =
 				{
 					float Damage = 10,
 					bool SendsDeathEvent = true,
-					bool DieOnCollide = true,
+					bool DieOnCollide = false,
 				},
 				Hierarchy = 
 				{
@@ -2817,7 +2817,7 @@ Level =
 				},
 				Health = 
 				{
-					float MaxHealth = 10,
+					float MaxHealth = 5,
 					bool DestroyAtZeroHealth = true,
 					float DamageScalar = 1,
 				},
@@ -2825,7 +2825,7 @@ Level =
 				{
 					float Damage = 10,
 					bool SendsDeathEvent = true,
-					bool DieOnCollide = true,
+					bool DieOnCollide = false,
 				},
 				Hierarchy = 
 				{
@@ -2894,7 +2894,7 @@ Level =
 				},
 				Health = 
 				{
-					float MaxHealth = 10,
+					float MaxHealth = 5,
 					bool DestroyAtZeroHealth = true,
 					float DamageScalar = 1,
 				},
@@ -2902,7 +2902,7 @@ Level =
 				{
 					float Damage = 10,
 					bool SendsDeathEvent = true,
-					bool DieOnCollide = true,
+					bool DieOnCollide = false,
 				},
 				Hierarchy = 
 				{
@@ -2971,7 +2971,7 @@ Level =
 				},
 				Health = 
 				{
-					float MaxHealth = 10,
+					float MaxHealth = 5,
 					bool DestroyAtZeroHealth = true,
 					float DamageScalar = 1,
 				},
@@ -2979,7 +2979,7 @@ Level =
 				{
 					float Damage = 10,
 					bool SendsDeathEvent = true,
-					bool DieOnCollide = true,
+					bool DieOnCollide = false,
 				},
 				Hierarchy = 
 				{
@@ -3048,7 +3048,7 @@ Level =
 				},
 				Health = 
 				{
-					float MaxHealth = 10,
+					float MaxHealth = 5,
 					bool DestroyAtZeroHealth = true,
 					float DamageScalar = 1,
 				},
@@ -3056,7 +3056,7 @@ Level =
 				{
 					float Damage = 10,
 					bool SendsDeathEvent = true,
-					bool DieOnCollide = true,
+					bool DieOnCollide = false,
 				},
 				Hierarchy = 
 				{
@@ -3125,7 +3125,7 @@ Level =
 				},
 				Health = 
 				{
-					float MaxHealth = 10,
+					float MaxHealth = 5,
 					bool DestroyAtZeroHealth = true,
 					float DamageScalar = 1,
 				},
@@ -3133,7 +3133,7 @@ Level =
 				{
 					float Damage = 10,
 					bool SendsDeathEvent = true,
-					bool DieOnCollide = true,
+					bool DieOnCollide = false,
 				},
 				Hierarchy = 
 				{
