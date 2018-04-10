@@ -342,6 +342,46 @@ Level =
 			Vec3 Scale = [0.300000012, 0.100000001, 1],
 			Quat Rotation = [0, 0, 0, 1],
 		},
+<<<<<<< HEAD
+=======
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [0, 0, 0, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5275aa4d802dd6dc:Square",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+		Area = 
+		{
+			Vec2 Size = [100, 100],
+			Location Origin = Center,
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5a70cbc5d77a1af1:Buildings",
+		LinkId = 
+		{
+			uint Id = 7,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [69.3178024, 56.7381859, 0],
+			Vec3 Scale = [0.300000012, 0.100000001, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+>>>>>>> 6057b5d0392d47e7eb294a9d7223c8229a86d3bd
 		Named = 
 		{
 			string Name = "Buildings",
