@@ -10,7 +10,7 @@ class DinoAttack : ZilchComponent
   // When space key is pressed
   if(event.Key == Keys. E && Zero.Keyboard.KeyIsDown(Keys.A))
   {
-    var spawnPosition = this.Owner.Transform.Translation;
+    var spawnPosition = this.Owner.Transform.Translation; 
 
     // Find the attack archetype:
     var archetypeToSpawn = Archetype.Bite;
