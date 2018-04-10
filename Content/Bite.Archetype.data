@@ -64,4 +64,10 @@ Cog =
 		bool SendsDeathEvent = true,
 		bool DieOnCollide = true,
 	},
+	TimedDeath = 
+	{
+		float Lifetime = 0.100000001,
+		bool SendsDeathEvent = true,
+		bool AutoDestroy = true,
+	},
 },
