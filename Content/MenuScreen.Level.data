@@ -236,7 +236,7 @@ Level =
 			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
 			string FontName = "4e7bac697bec55c5:Verdana",
 			uint FontSize = 60,
-			string Text = "Premal Rampage",
+			string Text = "Dankpage",
 			TextAlign Align = Center,
 			float PixelsPerUnit = 64,
 			bool Smoothing = true,
@@ -441,7 +441,7 @@ Level =
 					string DefaultSprite = "5a53e5499e0970e1:ControlsButton",
 					string HoveredSprite = "5a53e494fd6e5534:ControlButtonAnimation",
 					string ClickedSprite = "",
-					string LevelToLoad = "5a0d3b11ffce55dc:HowToPlayLevel",
+					string LevelToLoad = "5a0d3b11ffce55dc:ControlsLevel",
 				},
 			},
 			Cog = 
