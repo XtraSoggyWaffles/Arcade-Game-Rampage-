@@ -38,11 +38,7 @@ Cog =
 	},
 	Damage = 
 	{
-<<<<<<< HEAD
-		int PercentLeftToDestroy = 75,
-=======
 		int PercentLeftToDestroy = 50,
->>>>>>> 6057b5d0392d47e7eb294a9d7223c8229a86d3bd
 	},
 	Hierarchy = 
 	{
